@@ -1,0 +1,56 @@
+.waitlist-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+
+    .logo-title {
+        font-family: 'Kirang Haerang', cursive;
+        font-size: 3rem;
+        color: #86739B;
+        margin-bottom: 1rem;
+    }
+
+    .tagline {
+        font-family: 'Yusei Magic', sans-serif;
+        color: #3C3A3A;
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    .blurb {
+        font-family: 'Yusei Magic', sans-serif;
+        color: #3C3A3A;
+        text-align: center;
+        max-width: 500px;
+        margin-bottom: 2rem;
+
+        .highlight {
+            color: #85AAA6;
+            font-weight: bold;
+        }
+    }
+
+    .email-form input {
+        padding: 0.5rem;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        margin-right: 0.5rem;
+    }
+
+    .email-form button {
+        background-color: #85AAA6;
+        color: white;
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .thank-you {
+        font-family: 'Yusei Magic', sans-serif;
+        color: #85AAA6;
+        font-weight: bold;
+    }
+}  
