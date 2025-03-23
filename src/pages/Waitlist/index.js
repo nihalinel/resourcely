@@ -23,7 +23,7 @@ export default function Waitlist() {
             <form onSubmit={handleSubmit} className="email-form">
             <input
                 type="email"
-                placeholder="Enter your email"
+                placeholder="Enter your email" // need to implement the logic for saving the email addresses here
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
