@@ -9,15 +9,6 @@
   </p>
 </div>
 
-<!-- REMOVE THIS IF YOU DON'T HAVE A DEMO -->
-<!-- TIP: You can alternatively directly upload a video up to 100MB by dropping it in while editing the README on GitHub. This displays a video player directly on GitHub instead of making it so that you have to click an image/link -->
-<div align="center">
-  <a href="https://example.com">
-    <img src="https://github.com/user-attachments/assets/f45c9ee9-ad2f-40f4-bb60-e9bbd1472c45" alt="Project Demo">
-    <p>Watch Demo Video</p>
-  </a>
-</div>
-
 ## Table of Contents
 
 <details>
