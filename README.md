@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+<div align="center">
+  <!-- REMOVE THIS IF YOU DON'T HAVE A LOGO -->
+    <img src= <img width="173" alt="image" src="https://github.com/user-attachments/assets/b02709d5-6af2-4d79-90e7-65f534da42d0" />
+>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h3 align="center">Resourcely</h3>
 
-## Available Scripts
+  <p align="center">
+    A platform to help newcomers to Canada easily find essential services.
+    <br />
+     <a href="https://github.com/nihalinel/resourcely">github.com/nihalinel/resourcely</a>
+  </p>
+</div>
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#key-features">Key Features</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+  </ol>
+</details>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## About The Project
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Resourcely is a React-based web application designed to assist newcomers to Canada in finding essential services. It provides a centralized platform to discover resources such as food banks, job centers, and local events, with a focus on being ESL-friendly and easy to use. The current implementation features a waitlist sign-up page.
 
-### `npm test`
+### Key Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Waitlist Sign-up:** Allows users to submit their email to join a waitlist for the platform.
+- **Firebase Integration:** Uses Firebase Firestore to store submitted email addresses.
+- **Responsive Design:**  The application layout adapts to different screen sizes.
+- **Modern UI:** Styled with SCSS, providing a clean and user-friendly interface.
 
-### `npm run build`
+## Architecture
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Architecture Diagram](https://github.com/user-attachments/assets/75adc7aa-7719-4c4f-a9bb-3ba847e12e9f)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The project is built using:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Frontend:** React
+- **Styling:** SCSS
+- **Database:** Firebase Firestore
+- **Routing:** React Router
+- **Package Manager:** npm
 
-### `npm run eject`
+## Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To get a local copy up and running, follow these steps.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Prerequisites
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Node.js and npm installed on your machine. You can download Node.js from [nodejs.org](https://nodejs.org/).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Installation
 
-## Learn More
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/nihalinel/resourcely.git
+   ```
+2. Navigate to the project directory:
+   ```sh
+   cd resourcely
+   ```
+3. Install the npm packages:
+   ```sh
+   npm install
+   ```
+4. Configure Firebase:
+   - Create a Firebase project on the [Firebase Console](https://console.firebase.google.com/).
+   - Enable Firestore Database.
+   - Obtain your Firebase configuration details (apiKey, authDomain, projectId, etc.).
+   - Create a `.env` file in the root of your project and add your Firebase configuration as environment variables:
+     ```
+     REACT_APP_FIREBASE_API_KEY=YOUR_API_KEY
+     REACT_APP_FIREBASE_AUTH_DOMAIN=YOUR_AUTH_DOMAIN
+     REACT_APP_FIREBASE_PROJECT_ID=YOUR_PROJECT_ID
+     REACT_APP_FIREBASE_STORAGE_BUCKET=YOUR_STORAGE_BUCKET
+     REACT_APP_FIREBASE_MESSAGING_SENDER_ID=YOUR_MESSAGING_SENDER_ID
+     REACT_APP_FIREBASE_APP_ID=YOUR_APP_ID
+     REACT_APP_FIREBASE_MEASUREMENT_ID=YOUR_MEASUREMENT_ID
+     ```
+5. Start the development server:
+   ```sh
+   npm start
+   ```
+   Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Acknowledgments
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- This README was created using [gitreadme.dev](https://gitreadme.dev) — an AI tool that looks at your entire codebase to instantly generate high-quality
