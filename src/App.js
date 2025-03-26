@@ -2,7 +2,6 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 
 import Waitlist from './pages/Waitlist';
-import Layout from './pages/Layout';
 
 function App() {
   return (

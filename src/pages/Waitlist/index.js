@@ -1,14 +1,25 @@
 import React, { useState } from 'react';
-import './index.scss'; 
+import './index.scss';
+import { collection, addDoc } from 'firebase/firestore';
+import { db } from '../../firebase';
 
 export default function Waitlist() {
     const [email, setEmail] = useState('');
     const [submitted, setSubmitted] = useState(false);
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
+
+        try {
+        await addDoc(collection(db, 'waitlist'), {
+            email: email,
+            submittedAt: new Date().toISOString()
+        });
         console.log('Email submitted:', email);
         setSubmitted(true);
+        } catch (err) {
+        console.error('Error submitting email:', err);
+        }
     };
 
     return (
@@ -21,18 +32,18 @@ export default function Waitlist() {
 
         {!submitted ? (
             <form onSubmit={handleSubmit} className="email-form">
-            <input
+                <input
                 type="email"
-                placeholder="Enter your email" // need to implement the logic for saving the email addresses here
+                placeholder="Enter your email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-            />
-            <button type="submit">Join the Waitlist</button>
+                />
+                <button type="submit">Join the Waitlist</button>
             </form>
-        ) : (
+            ) : (
             <p className="thank-you">Thank you! You're on the waitlist.</p>
-        )}
+            )}
         </div>
     );
 }
