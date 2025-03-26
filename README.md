@@ -45,8 +45,6 @@ Resourcely is a React-based web application designed to assist newcomers to Cana
 
 ## Architecture
 
-![Architecture Diagram](https://github.com/user-attachments/assets/75adc7aa-7719-4c4f-a9bb-3ba847e12e9f)
-
 The project is built using:
 
 - **Frontend:** React
@@ -99,4 +97,4 @@ To get a local copy up and running, follow these steps.
 
 ## Acknowledgments
 
-- This README was created using [gitreadme.dev](https://gitreadme.dev) — an AI tool that looks at your entire codebase to instantly generate high-quality
+- This README was created using [gitreadme.dev](https://gitreadme.dev) — an AI tool that looks at your entire codebase to instantly generate high-quality README files.
